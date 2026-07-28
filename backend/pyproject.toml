@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "truthai-backend"
+version = "0.1.0"
+description = "Backend for TruthAI (FastAPI)"
+authors = ["TruthAI <dev@truthai.local>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = {extras=["standard"], version="^0.22.0"}
+SQLAlchemy = "^2.0.20"
+alembic = "^1.11.1"
+psycopg2-binary = "^2.9.7"
+pydantic = "^1.10.9"
+python-jose = "^3.3.0"
+passlib = {extras=["bcrypt"], version="^1.7.4"}
+redis = "^4.5.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.2"
+httpx = "^0.25.0"
